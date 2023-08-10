@@ -3,6 +3,7 @@ About r-quanteda.textstats-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-quanteda.textstats-feedstock/blob/main/LICENSE.txt)
 
+
 About r-quanteda.textstats
 --------------------------
 
@@ -11,6 +12,7 @@ Home: https://quanteda.io
 Package license: GPL-3.0-only
 
 Summary: Textual statistics functions formerly in the 'quanteda' package. Textual statistics for characterizing and comparing textual data. Includes functions for measuring term and document frequency, the co-occurrence of words, similarity and distance between features and documents, feature entropy, keyword occurrence, readability, and lexical diversity.  These functions extend the 'quanteda' package and are specially designed for sparse textual data.
+
 About r-quanteda.textstats
 --------------------------
 
