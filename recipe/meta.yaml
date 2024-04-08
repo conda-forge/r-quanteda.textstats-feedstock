@@ -1,4 +1,4 @@
-{% set version = "0.96.4" %}
+{% set version = "0.97" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/quanteda.textstats_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/quanteda.textstats/quanteda.textstats_{{ version }}.tar.gz
-  sha256: 9460949b3e40e889067aa3b4f90a89e1eec4a0b6875b7765afc0571ae61f0b74
+  sha256: b2fdf0bce1d563f4df5a65fe0ba86cfa2c437da3429d63a65bd0fbaad1f20e41
 
 build:
   merge_build_host: true  # [win]
