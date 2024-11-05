@@ -1,4 +1,4 @@
-{% set version = "0.96.4" %}
+{% set version = "0.97.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/quanteda.textstats_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/quanteda.textstats/quanteda.textstats_{{ version }}.tar.gz
-  sha256: 9460949b3e40e889067aa3b4f90a89e1eec4a0b6875b7765afc0571ae61f0b74
+  sha256: 29066ce26b5ddc20bc71856ad9c48e3771035a16158d7a7623abfce683e280fe
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
