@@ -12,41 +12,38 @@ source:
   sha256: 36db8f7a19627983ceeefc726a3d7fe0e9ff5685597dab82e2354b4e255ff42f
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{ compiler('c') }}              # [not win]
-    - {{ stdlib("c") }}                # [not win]
-    - {{ compiler('m2w64_c') }}        # [win]
-    - {{ stdlib("m2w64_c") }}          # [win]
-    - {{ compiler('cxx') }}            # [not win]
-    - {{ compiler('m2w64_cxx') }}      # [win]
+    - {{ compiler('c') }}
+    - {{ stdlib("c") }}
+    - {{ compiler('cxx') }}
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - pkg-config
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-matrix
     - r-rcpp >=0.12.12
     - r-rcpparmadillo >=0.7.600.1.0
-    - r-rcppparallel
     - r-nsyllable
     - r-proxyc >=0.1.4
     - r-quanteda
     - r-stringi
+    - tbb-devel
   run:
     - r-base
     - r-matrix
     - r-rcpp >=0.12.12
     - r-rcpparmadillo >=0.7.600.1.0
-    - r-rcppparallel
     - r-nsyllable
     - r-proxyc >=0.1.4
     - r-quanteda
